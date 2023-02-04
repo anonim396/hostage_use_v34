@@ -1,0 +1,48 @@
+"Games"
+{
+	"cstrike"
+	{
+		"Signatures"
+		{
+			"CHostage::HostageUse"
+			{
+				"library"	"server"
+				"windows"	"\x83\xEC\x18\x56\x57\x8B\xF9\x8B\x87\xA8\x00\x00\x00"
+				"linux"		"@_ZN8CHostage10HostageUseEP11CBaseEntityS1_8USE_TYPEf"
+			}
+		}
+
+		"Functions"
+		{
+			"CHostage::HostageUse"
+			{
+				"signature"	"CHostage::HostageUse"
+				"callconv"	"thiscall"
+				"this"		"entity"
+				"return"	"void"
+				"arguments"
+				{
+					"pActivator"
+					{
+						"type"	"cbaseentity"
+					}
+
+					"pCaller"
+					{
+						"type"	"cbaseentity"
+					}
+
+					"useType"
+					{
+						"type"	"int"
+					}
+
+					"value"
+					{
+						"type"	"float"
+					}
+				}
+			}
+		}
+	}
+}
